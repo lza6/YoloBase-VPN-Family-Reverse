@@ -1,0 +1,35 @@
+[
+ {
+  "host": "86.48.22.32",
+  "port": 8000,
+  "regions": "3/5",
+  "password": "KixLvKzwjekG00rm",
+  "method": "aes-256-gcm",
+  "city": "New York",
+  "iso": "us",
+  "app": "?",
+  "tier": "?"
+ },
+ {
+  "host": "149.56.142.242",
+  "port": 13000,
+  "regions": "5/5",
+  "password": "ENhdej4NkdPYiCZjAoEqGiUBSQBcfT2d",
+  "method": "aes-256-gcm",
+  "city": "North Las Vegas",
+  "iso": "US",
+  "app": "?",
+  "tier": "?"
+ },
+ {
+  "host": "143.110.162.99",
+  "port": 13049,
+  "regions": "5/5",
+  "password": "4e1712f35fe98d7809c9c1cf9b07161d",
+  "method": "aes-256-gcm",
+  "city": "London",
+  "iso": null,
+  "app": "?",
+  "tier": "?"
+ }
+]

@@ -1,0 +1,337 @@
+# YoloBase 白标系节点池（Eto/World/Lemon/Stream/MATE/FoxGuard 8 家共享框架）
+# 状态 2026-11-12: API 活、协议全破(yoloclient.py 可重放)、SS 后端全军下线
+# 复活检测: python tools/yoloclient.py 重收割 -> checkhost -> SS握手, 三关全过才入池
+# 凭证: aes-256-gcm; 每节点 pw 见 data/all_unique_nodes.json
+
+# [tcp-open-but-ss-reject] North Las Vegas - 2432 North Las Vegas proxyhub
+ss://aes-256-gcm:ENhdej4NkdPYiCZjAoEqGiUBSQBcfT2d@149.56.142.242:13000
+# [tcp-open-but-ss-reject] Hannover - 128 Hannover germanyproxy
+ss://aes-256-gcm:K1PeEC8CHngvFIo2uC34a1_AnFpM8CIZ@15.204.246.196:13000
+# [tcp-open-but-ss-reject] New York - 335 New York contabo
+ss://aes-256-gcm:KixLvKzwjekG00rm@86.48.22.32:8000
+# [dead] London - 2892 London do
+ss://aes-256-gcm:4e1712f35fe98d7809c9c1cf9b07161d@143.110.162.99:13049
+# [dead] Oslo - 3971 Oslo onep
+ss://aes-256-gcm:x1wq96z21cs65@185.90.61.55:8881
+# [dead] Oslo - 3972 Oslo onep
+ss://aes-256-gcm:x1wq96z21cs65@185.90.61.56:8881
+# [dead] Oslo - 3973 Oslo onep
+ss://aes-256-gcm:x1wq96z21cs65@185.90.61.57:8881
+# [dead] Oslo - 3974 Oslo onep
+ss://aes-256-gcm:x1wq96z21cs65@185.90.61.58:8881
+# [dead] Oslo - 3975 Oslo onep
+ss://aes-256-gcm:x1wq96z21cs65@185.90.61.59:8881
+# [dead] Beauharnois - 468 Beauharnois ovh
+ss://aes-256-gcm:cdBIDV42DCwnfIN@51.222.141.178:8119
+# [dead] Beauharnois - 805 Beauharnois ovh
+ss://aes-256-gcm:TEzjfAYq2IjtuoS@51.222.141.178:6679
+# [dead] Beauharnois - 673 Beauharnois ovh
+ss://aes-256-gcm:faBAoD54k87UJG7@51.222.141.178:2376
+# [dead] Beauharnois - 764 Beauharnois ovh
+ss://aes-256-gcm:XKFKl2rULjIp74@51.222.141.178:8009
+# [dead] Beauharnois - 71 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.141.178:5601
+# [dead] Beauharnois - 120 Beauharnois ovh
+ss://aes-256-gcm:g5MeD6Ft3CWlJId@51.222.141.19:5004
+# [dead] Beauharnois - 302 Beauharnois ovh
+ss://aes-256-gcm:pKEW8JPByTVTLtM@51.222.141.19:4444
+# [dead] Beauharnois - 778 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.141.19:5601
+# [dead] Beauharnois - 451 Beauharnois ovh
+ss://aes-256-gcm:TEzjfAYq2IjtuoS@51.222.141.19:6697
+# [dead] Beauharnois - 693 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.141.19:3306
+# [dead] Beauharnois - 736 Beauharnois ovh
+ss://aes-256-gcm:cdBIDV42DCwnfIN@51.222.141.64:8119
+# [dead] Beauharnois - 599 Beauharnois ovh
+ss://aes-256-gcm:e4FCWrgpkji3QY@51.222.141.64:9101
+# [dead] Beauharnois - 18 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.141.64:9090
+# [dead] Beauharnois - 640 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.141.64:5498
+# [dead] Beauharnois - 367 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.141.64:5600
+# [dead] Beauharnois - 250 Beauharnois ovh
+ss://aes-256-gcm:faBAoD54k87UJG7@51.222.142.101:2375
+# [dead] Beauharnois - 550 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.142.101:5001
+# [dead] Beauharnois - 310 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.142.101:3306
+# [dead] Beauharnois - 738 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.142.101:9090
+# [dead] Beauharnois - 665 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.142.101:5499
+# [dead] Beauharnois - 517 Beauharnois ovh
+ss://aes-256-gcm:e4FCWrgpkji3QY@51.222.142.180:9102
+# [dead] Beauharnois - 701 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.142.180:5600
+# [dead] Beauharnois - 288 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.142.180:5498
+# [dead] Beauharnois - 1008 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.142.180:8888
+# [dead] Beauharnois - 724 Beauharnois ovh
+ss://aes-256-gcm:zDNVedRFPQexG9v@51.222.142.180:6379
+# [dead] Beauharnois - 161 Beauharnois ovh
+ss://aes-256-gcm:faBAoD54k87UJG7@51.222.142.198:2376
+# [dead] Beauharnois - 645 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.142.198:3389
+# [dead] Beauharnois - 711 Beauharnois ovh
+ss://aes-256-gcm:PCnnH6SQSnfoS27@51.222.142.198:8091
+# [dead] Beauharnois - 529 Beauharnois ovh
+ss://aes-256-gcm:g5MeD6Ft3CWlJId@51.222.142.198:5003
+# [dead] Beauharnois - 672 Beauharnois ovh
+ss://aes-256-gcm:zDNVedRFPQexG9v@51.222.142.198:6379
+# [dead] Beauharnois - 964 Beauharnois ovh
+ss://aes-256-gcm:e4FCWrgpkji3QY@51.222.142.241:9101
+# [dead] Beauharnois - 523 Beauharnois ovh
+ss://aes-256-gcm:KixLvKzwjekG00rm@51.222.142.241:8000
+# [dead] Beauharnois - 722 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.142.241:5601
+# [dead] Beauharnois - 245 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.142.241:5001
+# [dead] Beauharnois - 975 Beauharnois ovh
+ss://aes-256-gcm:FoOiGlkAA9yPEGP@51.222.142.241:7307
+# [dead] Beauharnois - 816 Beauharnois ovh
+ss://aes-256-gcm:e4FCWrgpkji3QY@51.222.143.237:9102
+# [dead] Beauharnois - 10 Beauharnois ovh
+ss://aes-256-gcm:PCnnH6SQSnfoS27@51.222.143.237:8091
+# [dead] Beauharnois - 105 Beauharnois ovh
+ss://aes-256-gcm:XKFKl2rULjIp74@51.222.143.237:8008
+# [dead] Beauharnois - 692 Beauharnois ovh
+ss://aes-256-gcm:cdBIDV42DCwnfIN@51.222.143.237:8118
+# [dead] Beauharnois - 113 Beauharnois ovh
+ss://aes-256-gcm:e4FCWrgpkji3QY@51.222.143.237:9101
+# [dead] Beauharnois - 41 Beauharnois ovh
+ss://aes-256-gcm:KixLvKzwjekG00rm@51.222.143.67:8080
+# [dead] Beauharnois - 738 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.143.67:5498
+# [dead] Beauharnois - 102 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.143.67:3306
+# [dead] Beauharnois - 926 Beauharnois ovh
+ss://aes-256-gcm:pKEW8JPByTVTLtM@51.222.143.67:4444
+# [dead] Beauharnois - 549 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.143.67:9090
+# [dead] Beauharnois - 374 Beauharnois ovh
+ss://aes-256-gcm:RexnBgU7EV5ADxG@51.222.156.197:7001
+# [dead] Beauharnois - 233 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.156.197:5601
+# [dead] Beauharnois - 186 Beauharnois ovh
+ss://aes-256-gcm:cdBIDV42DCwnfIN@51.222.156.197:8119
+# [dead] Beauharnois - 693 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.156.197:9090
+# [dead] Beauharnois - 197 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.156.197:5499
+# [dead] Beauharnois - 521 Beauharnois ovh
+ss://aes-256-gcm:TEzjfAYq2IjtuoS@51.222.159.96:6697
+# [dead] Beauharnois - 724 Beauharnois ovh
+ss://aes-256-gcm:faBAoD54k87UJG7@51.222.159.96:2375
+# [dead] Beauharnois - 652 Beauharnois ovh
+ss://aes-256-gcm:zDNVedRFPQexG9v@51.222.159.96:6379
+# [dead] Beauharnois - 371 Beauharnois ovh
+ss://aes-256-gcm:KixLvKzwjekG00rm@51.222.159.96:8000
+# [dead] Beauharnois - 849 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.159.96:5000
+# [dead] Beauharnois - 9 Beauharnois ovh
+ss://aes-256-gcm:PCnnH6SQSnfoS27@51.222.24.217:8091
+# [dead] Beauharnois - 422 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.24.217:5601
+# [dead] Beauharnois - 40 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.24.217:3389
+# [dead] Beauharnois - 663 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.24.217:5498
+# [dead] Beauharnois - 821 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.24.217:5001
+# [dead] Beauharnois - 50 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.24.22:3389
+# [dead] Beauharnois - 629 Beauharnois ovh
+ss://aes-256-gcm:e4FCWrgpkji3QY@51.222.24.22:9101
+# [dead] Beauharnois - 49 Beauharnois ovh
+ss://aes-256-gcm:pKEW8JPByTVTLtM@51.222.24.22:443
+# [dead] Beauharnois - 557 Beauharnois ovh
+ss://aes-256-gcm:kDWvXYZoTBcGkC4@51.222.24.22:8881
+# [dead] Beauharnois - 688 Beauharnois ovh
+ss://aes-256-gcm:XKFKl2rULjIp74@51.222.24.22:8009
+# [dead] Beauharnois - 390 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.24.91:5001
+# [dead] Beauharnois - 304 Beauharnois ovh
+ss://aes-256-gcm:kDWvXYZoTBcGkC4@51.222.24.91:8882
+# [dead] Beauharnois - 622 Beauharnois ovh
+ss://aes-256-gcm:zDNVedRFPQexG9v@51.222.24.91:6379
+# [dead] Beauharnois - 73 Beauharnois ovh
+ss://aes-256-gcm:KixLvKzwjekG00rm@51.222.24.91:8000
+# [dead] Beauharnois - 966 Beauharnois ovh
+ss://aes-256-gcm:PCnnH6SQSnfoS27@51.222.24.91:8091
+# [dead] Beauharnois - 488 Beauharnois ovh
+ss://aes-256-gcm:FoOiGlkAA9yPEGP@51.222.25.134:7307
+# [dead] Beauharnois - 674 Beauharnois ovh
+ss://aes-256-gcm:zDNVedRFPQexG9v@51.222.25.134:6379
+# [dead] Beauharnois - 307 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.25.134:5000
+# [dead] Beauharnois - 411 Beauharnois ovh
+ss://aes-256-gcm:g5MeD6Ft3CWlJId@51.222.25.134:5003
+# [dead] Beauharnois - 395 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.25.134:5499
+# [dead] Beauharnois - 686 Beauharnois ovh
+ss://aes-256-gcm:e4FCWrgpkji3QY@51.222.25.51:9102
+# [dead] Beauharnois - 88 Beauharnois ovh
+ss://aes-256-gcm:PCnnH6SQSnfoS27@51.222.25.51:8090
+# [dead] Beauharnois - 632 Beauharnois ovh
+ss://aes-256-gcm:faBAoD54k87UJG7@51.222.25.51:2376
+# [dead] Beauharnois - 329 Beauharnois ovh
+ss://aes-256-gcm:RexnBgU7EV5ADxG@51.222.25.51:7001
+# [dead] Beauharnois - 416 Beauharnois ovh
+ss://aes-256-gcm:FoOiGlkAA9yPEGP@51.222.25.51:7306
+# [dead] Beauharnois - 671 Beauharnois ovh
+ss://aes-256-gcm:XKFKl2rULjIp74@51.222.25.55:8009
+# [dead] Beauharnois - 609 Beauharnois ovh
+ss://aes-256-gcm:e4FCWrgpkji3QY@51.222.25.55:9102
+# [dead] Beauharnois - 839 Beauharnois ovh
+ss://aes-256-gcm:kDWvXYZoTBcGkC4@51.222.25.55:8882
+# [dead] Beauharnois - 21 Beauharnois ovh
+ss://aes-256-gcm:zDNVedRFPQexG9v@51.222.25.55:445
+# [dead] Beauharnois - 211 Beauharnois ovh
+ss://aes-256-gcm:FoOiGlkAA9yPEGP@51.222.25.55:7306
+# [dead] Beauharnois - 367 Beauharnois ovh
+ss://aes-256-gcm:e4FCWrgpkji3QY@51.222.26.186:9101
+# [dead] Beauharnois - 415 Beauharnois ovh
+ss://aes-256-gcm:FoOiGlkAA9yPEGP@51.222.26.186:7306
+# [dead] Beauharnois - 525 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.26.186:3389
+# [dead] Beauharnois - 881 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.26.186:9090
+# [dead] Beauharnois - 946 Beauharnois ovh
+ss://aes-256-gcm:KixLvKzwjekG00rm@51.222.26.186:5500
+# [dead] Beauharnois - 790 Beauharnois ovh
+ss://aes-256-gcm:cdBIDV42DCwnfIN@51.222.26.210:8118
+# [dead] Beauharnois - 377 Beauharnois ovh
+ss://aes-256-gcm:PCnnH6SQSnfoS27@51.222.26.210:8090
+# [dead] Beauharnois - 199 Beauharnois ovh
+ss://aes-256-gcm:faBAoD54k87UJG7@51.222.26.210:2376
+# [dead] Beauharnois - 930 Beauharnois ovh
+ss://aes-256-gcm:cdBIDV42DCwnfIN@51.222.26.210:8119
+# [dead] Beauharnois - 434 Beauharnois ovh
+ss://aes-256-gcm:FoOiGlkAA9yPEGP@51.222.26.210:7307
+# [dead] Beauharnois - 993 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.26.4:9090
+# [dead] Beauharnois - 581 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.26.4:5000
+# [dead] Beauharnois - 1008 Beauharnois ovh
+ss://aes-256-gcm:KixLvKzwjekG00rm@51.222.26.4:8000
+# [dead] Beauharnois - 228 Beauharnois ovh
+ss://aes-256-gcm:faBAoD54k87UJG7@51.222.26.4:2375
+# [dead] Beauharnois - 876 Beauharnois ovh
+ss://aes-256-gcm:pKEW8JPByTVTLtM@51.222.26.4:443
+# [dead] Beauharnois - 973 Beauharnois ovh
+ss://aes-256-gcm:KixLvKzwjekG00rm@51.222.27.10:5500
+# [dead] Beauharnois - 346 Beauharnois ovh
+ss://aes-256-gcm:XKFKl2rULjIp74@51.222.27.10:8008
+# [dead] Beauharnois - 888 Beauharnois ovh
+ss://aes-256-gcm:kDWvXYZoTBcGkC4@51.222.27.10:8882
+# [dead] Beauharnois - 454 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.27.10:5499
+# [dead] Beauharnois - 951 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.27.10:5600
+# [dead] Beauharnois - 218 Beauharnois ovh
+ss://aes-256-gcm:e4FCWrgpkji3QY@51.222.27.109:9102
+# [dead] Beauharnois - 640 Beauharnois ovh
+ss://aes-256-gcm:KixLvKzwjekG00rm@51.222.27.109:5500
+# [dead] Beauharnois - 281 Beauharnois ovh
+ss://aes-256-gcm:cdBIDV42DCwnfIN@51.222.27.109:8119
+# [dead] Beauharnois - 523 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.27.109:5000
+# [dead] Beauharnois - 985 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.27.109:5601
+# [dead] Beauharnois - 498 Beauharnois ovh
+ss://aes-256-gcm:KixLvKzwjekG00rm@51.222.27.223:5500
+# [dead] Beauharnois - 418 Beauharnois ovh
+ss://aes-256-gcm:FoOiGlkAA9yPEGP@51.222.27.223:7306
+# [dead] Beauharnois - 847 Beauharnois ovh
+ss://aes-256-gcm:PCnnH6SQSnfoS27@51.222.27.223:8091
+# [dead] Beauharnois - 547 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.27.223:5000
+# [dead] Beauharnois - 392 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.27.223:8888
+# [dead] Beauharnois - 600 Beauharnois ovh
+ss://aes-256-gcm:KixLvKzwjekG00rm@51.222.27.236:8000
+# [dead] Beauharnois - 81 Beauharnois ovh
+ss://aes-256-gcm:TEzjfAYq2IjtuoS@51.222.27.236:6697
+# [dead] Beauharnois - 313 Beauharnois ovh
+ss://aes-256-gcm:g5MeD6Ft3CWlJId@51.222.27.236:5003
+# [dead] Beauharnois - 441 Beauharnois ovh
+ss://aes-256-gcm:TEzjfAYq2IjtuoS@51.222.27.236:6679
+# [dead] Beauharnois - 971 Beauharnois ovh
+ss://aes-256-gcm:zDNVedRFPQexG9v@51.222.27.236:445
+# [dead] Beauharnois - 415 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.28.76:5001
+# [dead] Beauharnois - 448 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.28.76:5601
+# [dead] Beauharnois - 113 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.28.76:5600
+# [dead] Beauharnois - 46 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.28.76:5498
+# [dead] Beauharnois - 285 Beauharnois ovh
+ss://aes-256-gcm:g5MeD6Ft3CWlJId@51.222.28.76:5003
+# [dead] Beauharnois - 94 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.30.1:5498
+# [dead] Beauharnois - 840 Beauharnois ovh
+ss://aes-256-gcm:pKEW8JPByTVTLtM@51.222.30.1:4444
+# [dead] Beauharnois - 795 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.30.1:5000
+# [dead] Beauharnois - 729 Beauharnois ovh
+ss://aes-256-gcm:faBAoD54k87UJG7@51.222.30.1:2376
+# [dead] Beauharnois - 573 Beauharnois ovh
+ss://aes-256-gcm:PCnnH6SQSnfoS27@51.222.30.1:8091
+# [dead] Beauharnois - 166 Beauharnois ovh
+ss://aes-256-gcm:faBAoD54k87UJG7@51.222.30.152:2376
+# [dead] Beauharnois - 658 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.30.152:3306
+# [dead] Beauharnois - 523 Beauharnois ovh
+ss://aes-256-gcm:pKEW8JPByTVTLtM@51.222.30.152:443
+# [dead] Beauharnois - 958 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.30.152:5000
+# [dead] Beauharnois - 590 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.30.152:5499
+# [dead] Beauharnois - 843 Beauharnois ovh
+ss://aes-256-gcm:zDNVedRFPQexG9v@51.222.30.254:445
+# [dead] Beauharnois - 383 Beauharnois ovh
+ss://aes-256-gcm:zDNVedRFPQexG9v@51.222.30.254:6379
+# [dead] Beauharnois - 335 Beauharnois ovh
+ss://aes-256-gcm:kDWvXYZoTBcGkC4@51.222.30.254:8882
+# [dead] Beauharnois - 254 Beauharnois ovh
+ss://aes-256-gcm:TEzjfAYq2IjtuoS@51.222.30.254:6697
+# [dead] Beauharnois - 750 Beauharnois ovh
+ss://aes-256-gcm:cdBIDV42DCwnfIN@51.222.30.254:8118
+# [dead] Beauharnois - 857 Beauharnois ovh
+ss://aes-256-gcm:lGqs95QkFHo2NV@51.222.31.152:5498
+# [dead] Beauharnois - 951 Beauharnois ovh
+ss://aes-256-gcm:zDNVedRFPQexG9v@51.222.31.152:445
+# [dead] Beauharnois - 393 Beauharnois ovh
+ss://aes-256-gcm:PCnnH6SQSnfoS27@51.222.31.152:8090
+# [dead] Beauharnois - 42 Beauharnois ovh
+ss://aes-256-gcm:g5MeD6Ft3CWlJId@51.222.31.152:5003
+# [dead] Beauharnois - 543 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.31.152:5001
+# [dead] Beauharnois - 932 Beauharnois ovh
+ss://aes-256-gcm:FoOiGlkAA9yPEGP@51.222.31.49:7307
+# [dead] Beauharnois - 48 Beauharnois ovh
+ss://aes-256-gcm:g5MeD6Ft3CWlJId@51.222.31.49:5003
+# [dead] Beauharnois - 152 Beauharnois ovh
+ss://aes-256-gcm:KixLvKzwjekG00rm@51.222.31.49:8080
+# [dead] Beauharnois - 434 Beauharnois ovh
+ss://aes-256-gcm:pKEW8JPByTVTLtM@51.222.31.49:443
+# [dead] Beauharnois - 381 Beauharnois ovh
+ss://aes-256-gcm:XKFKl2rULjIp74@51.222.31.49:8008
+# [dead] Beauharnois - 173 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.31.83:5001
+# [dead] Beauharnois - 178 Beauharnois ovh
+ss://aes-256-gcm:e4FCWrgpkji3QY@51.222.31.83:9102
+# [dead] Beauharnois - 957 Beauharnois ovh
+ss://aes-256-gcm:XKFKl2rULjIp74@51.222.31.83:8009
+# [dead] Beauharnois - 357 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.31.83:3389
+# [dead] Beauharnois - 58 Beauharnois ovh
+ss://aes-256-gcm:Y6R9pAtvxxzmGC@51.222.31.83:3306
+# [dead] New York - 324 New York contabo
+ss://aes-256-gcm:pKEW8JPByTVTLtM@86.48.22.24:443
+# [dead] New York - 927 New York contabo
+ss://aes-256-gcm:kDWvXYZoTBcGkC4@86.48.22.32:8881

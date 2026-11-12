@@ -1,0 +1,44 @@
+score	file	package	engines	schemes	api_hosts
+82	Turbo_VPN_Lite_v1.5.2_(2026052901)_Mod.apk	?	strongswan-ikev2;tun2socks;xray	1	40
+82	Turbo_VPN_v4.2.9.13_(2026050911)_Mod.apk	?	strongswan-ikev2;openvpn;tun2socks;xray	1	40
+74	UFO_VPN_v2.5.14_(2514)_Mod.apk	?	gomobile-go;hev-tunnel	1	40
+60	Eto_Net_Proxy_v4.3.7_(437)_Mod.apk	?	tun2socks	2	40
+60	Fox_Guard_VPN_v1.7.237_(17237)_Mod.apk	?	tun2socks	2	40
+60	Lemon_VPN_v5.6.399_(56399)_Mod.apk	?	tun2socks	2	40
+60	Rocket_VPN_v3.31.051_(331051)_Mod.apk	?	tun2socks	2	40
+60	Stream_VPN_v1.3.473_(13473)_Mod.apk	?	tun2socks	2	40
+60	TapByte_Net_vtap2.9.1_(291)_Mod.apk	?	tun2socks	2	40
+60	World_VPN_v1.3.16_(1316)_Mod.apk	?	tun2socks	2	40
+59	MATE_VPN_v5.1.552_(51552)_Mod.apk	?	tun2socks	1	40
+31	ExpressVPN v12.71.0 (PREMIUM).apk	android.app.shortcuts	strongswan-ikev2;gomobile-go;openvpn;trojan;tun2socks;v2ray	0	40
+31	LinkVPN_v1.3.2_(32)_Mod.apk	?	strongswan-ikev2;gomobile-go;hev-tunnel	0	40
+31	Surge_VPN_v2.1.5_(116)_Mod.apk	?	openvpn;tun2socks;v2ray	0	40
+31	VPN.lat_v3.9.63_(7795)_Mod.apk	?	gomobile-go;openvpn;wireguard	0	40
+31	VPN_Super_Unlimited_Proxy_v2.34.1_(23401)_Mod.apk	?	strongswan-ikev2;gomobile-go;openvpn;trojan;tun2socks;v2ray	0	40
+31	vpnify_v2.3.0_(2300002)_Mod.apk	?	gomobile-go;openvpn	0	40
+26	eEagle_VPN_v2.12.9_(132)_Mod.apk	?	wireguard;openvpn;openvpn3	0	40
+26	Pronto_VPN_v11.4.382_(382)_Mod.apk	?	openvpn	0	40
+26	Tryme_VPN_v1.1.337_(337)_Mod.apk	?	openvpn;openvpn3	0	40
+23	Ninja_VPN_v1.4.9_(46)_Mod.apk	?	gomobile-go;wireguard	0	40
+23	Proxy Master v5.4.5 (Premium).apk	?	sing-box	0	40
+23	S_VPN_v3.4.4_(186)_Mod.apk	?	gomobile-go;tun2socks	0	40
+23	Ultrasurf_VPN_v3.3.6_(336)_Mod.apk	?	gomobile-go	0	29
+18	QuixVPN_v1.14.8_(149)_Mod.apk	?	wireguard	0	40
+16	Edge_VPN_v1.7.9_(80)_Mod.apk	?	openvpn;tun2socks	0	40
+16	GOVPN_v1.9.9.2_(199208)_Mod.apk	?	openvpn	0	40
+16	Privify_VPN_v5.4.2_(82)_Mod.apk	?	openvpn;openvpn3	0	40
+16	Stag_VPN_v19.0.0_(80)_Mod.apk	?	strongswan-ikev2;openvpn	0	40
+16	VPN Proxy Master v2.3.6 [Premium].apk	com.android.stamp.source	openvpn;openvpn3	0	40
+16	VPN v206 (Premium).apk	?	openvpn	0	40
+8	1.1.1.1_VPN_v6.38.11_(5703)_Mod.apk	?	tun2socks	0	40
+8	AnimeArt v3.9.2 (Premium).apk	?		0	40
+8	Ask Me Anything_v1.7.0 (PREMIUM).apk	?		0	40
+8	Chat_AI_v241.0_(241)_Mod.apk	?		0	40
+8	GPTalk v4.0.2.2 (Premium).apk	?		0	40
+8	iMemo v9.0.12 (Premium).apk	?		0	40
+8	nova ai v3.7.2 (Update)_latest.apk	?		0	40
+8	Secure_VPN_v4.4.2_(202606230)_Mod.apk	?		0	37
+8	Urban_VPN_v2.2.4_(162)_Mod.apk	?	wireguard	0	40
+8	Viddo v4.0.4.1 (Pro).apk	?		0	40
+8	Xproguard_VPN_v3.7.8_(78)_Mod.apk	?		0	40
+0	AIChat v1.9.1 (PREMIUM) by aichat.apk	?		0	0

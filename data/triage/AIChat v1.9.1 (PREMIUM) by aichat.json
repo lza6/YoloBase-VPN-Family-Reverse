@@ -1,0 +1,28 @@
+{
+ "file": "AIChat v1.9.1 (PREMIUM) by aichat.apk",
+ "size_mb": 51.3,
+ "package": null,
+ "versionName": null,
+ "versionCode": null,
+ "engines": [],
+ "libs": [
+  "libEncryptorP.so",
+  "libapminsighta.so",
+  "libapminsightb.so",
+  "libbuffer_pg.so",
+  "libfile_lock_pg.so",
+  "libnms.so",
+  "libpairipcore.so",
+  "libtobEmbedPagEncrypt.so"
+ ],
+ "dex_count": 7,
+ "asset_files": 63,
+ "urls": {},
+ "hosts": {},
+ "schemes": {},
+ "cred_hints": [],
+ "score": 0,
+ "notes": [
+  "BAD ZIP"
+ ]
+}

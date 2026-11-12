@@ -1,0 +1,13 @@
+work/
+loot/dexstr/
+loot/xray-test/
+loot/libsslocal_stream.so
+loot/*.png
+loot/*.jpg
+loot/signing-assets/
+!loot/signing-assets/.gitkeep
+demo/server.log
+demo/report_data.json
+hs_err_*.log
+replay_*.log
+__pycache__/
